@@ -110,13 +110,13 @@ namespace design
                     MessageBox.Show("Пользователь с такой электронной почтой уже существует.");
                     return;
                 }
-
+                HeshPassword heshPassword = new HeshPassword();
                 var user = context.Users.FirstOrDefault(user => user.Email == Email_);
                 if (user != null)
                 {
                     user.Name = NameText.Text;
                     user.Email = EmailText.Text;
-                    user.Password = PasswordText.Text;
+                    user.Password = heshPassword.GetPassword(PasswordText.Text);
                     context.SaveChanges();
                     MessageBox.Show("Данные успешно сохранены!");
                 }
