@@ -5,7 +5,7 @@ namespace design
     public partial class MainWindow : Form
     {
         string Email { get; set; }
-        int I { get; set; }
+        public int I { get; set; }
         int IdRealryForFav { get; set; }
         Dictionary<int, decimal> DictRecom { get; set; }
         public MainWindow()
