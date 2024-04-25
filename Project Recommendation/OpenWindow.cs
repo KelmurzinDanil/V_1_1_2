@@ -107,5 +107,19 @@ namespace design
                 this.Hide();
             }
         }
+
+        private void LanguageComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (LanguageComboBox.SelectedIndex == 0)
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ru");
+            }
+            else
+            {
+                Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            }
+            Controls.Clear();
+            InitializeComponent();
+        }
     }
 }
