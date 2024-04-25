@@ -18,12 +18,14 @@ namespace design
             label3.BackColor = Color.Transparent;
             label4.Parent = Picture4;
             label4.BackColor = Color.Transparent;
-            EmailText.KeyPress += EmailText_KeyPress;
             NameText.ReadOnly = true;
             EmailText.ReadOnly = true;
             PasswordText.ReadOnly = true;
+            EmailText.KeyPress += EmailText_KeyPress;
+            PasswordText.KeyPress += PasswordText_KeyPress;
 
         }
+
         public Profile(string email)
         {
             Email_ = email;
@@ -37,12 +39,21 @@ namespace design
             label3.Parent = Picture4;
             label3.BackColor = Color.Transparent;
             label4.Parent = Picture4;
-            label4.BackColor = Color.Transparent;
-            EmailText.KeyPress += EmailText_KeyPress;
+            label4.BackColor = Color.Transparent;          
             NameText.ReadOnly = true;
             EmailText.ReadOnly = true;
             PasswordText.ReadOnly = true;
+            EmailText.KeyPress += EmailText_KeyPress;
+            PasswordText.KeyPress += PasswordText_KeyPress;
 
+        }
+
+        private void PasswordText_KeyPress(object? sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ' ')
+            {
+                e.Handled = true;
+            }
         }
 
         private void EditButton_Click(object sender, EventArgs e)

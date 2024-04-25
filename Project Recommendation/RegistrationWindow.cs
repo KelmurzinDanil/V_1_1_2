@@ -10,7 +10,17 @@ namespace design
             MaximizeBox = false;
             PasswordRegText.PasswordChar = '*';
             LoginRegText.KeyPress += LoginRegText_KeyPress;
+            PasswordRegText.KeyPress += PasswordRegText_KeyPress;
         }
+
+        private void PasswordRegText_KeyPress(object? sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == ' ')
+            {
+                e.Handled = true;
+            }
+        }
+
         private void LoginRegText_KeyPress(object? sender, KeyPressEventArgs e)
         {
             if (!char.IsLetterOrDigit(e.KeyChar) && !char.IsControl(e.KeyChar) && e.KeyChar != '@' && e.KeyChar != '.' && !char.GetUnicodeCategory(e.KeyChar).Equals(System.Globalization.UnicodeCategory.LowercaseLetter) && !char.GetUnicodeCategory(e.KeyChar).Equals(System.Globalization.UnicodeCategory.UppercaseLetter))

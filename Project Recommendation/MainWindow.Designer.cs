@@ -45,7 +45,6 @@
             Square = new Label();
             Address = new Label();
             AmountOfFloors = new Label();
-            Floor = new Label();
             AddressText = new Label();
             PriceText = new Label();
             SquareText = new Label();
@@ -236,20 +235,9 @@
             AmountOfFloors.ForeColor = SystemColors.ButtonHighlight;
             AmountOfFloors.Location = new Point(207, 732);
             AmountOfFloors.Name = "AmountOfFloors";
-            AmountOfFloors.Size = new Size(267, 42);
+            AmountOfFloors.Size = new Size(227, 42);
             AmountOfFloors.TabIndex = 22;
             AmountOfFloors.Text = "Количество этажей:\r\n";
-            // 
-            // Floor
-            // 
-            Floor.BackColor = Color.Transparent;
-            Floor.Font = new Font("Constantia", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
-            Floor.ForeColor = SystemColors.ButtonHighlight;
-            Floor.Location = new Point(207, 732);
-            Floor.Name = "Floor";
-            Floor.Size = new Size(90, 42);
-            Floor.TabIndex = 23;
-            Floor.Text = "Этаж:\r\n";
             // 
             // AddressText
             // 
@@ -326,7 +314,6 @@
             Controls.Add(SquareText);
             Controls.Add(PriceText);
             Controls.Add(AddressText);
-            Controls.Add(Floor);
             Controls.Add(AmountOfFloors);
             Controls.Add(Address);
             Controls.Add(Square);
@@ -370,7 +357,6 @@
         private System.Windows.Forms.Label Square;
         private System.Windows.Forms.Label Address;
         private System.Windows.Forms.Label AmountOfFloors;
-        private System.Windows.Forms.Label Floor;
         private System.Windows.Forms.Label AddressText;
         private System.Windows.Forms.Label PriceText;
         private System.Windows.Forms.Label SquareText;

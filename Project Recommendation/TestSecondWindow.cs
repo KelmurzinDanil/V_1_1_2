@@ -391,6 +391,25 @@ namespace design
 
         private void Btn_GetRecom_Click(object sender, EventArgs e)
         {
+
+            int selectedCount = 0;
+            if (Photo1.BorderStyle == BorderStyle.Fixed3D) selectedCount++;
+            if (Photo2.BorderStyle == BorderStyle.Fixed3D) selectedCount++;
+            if (Photo3.BorderStyle == BorderStyle.Fixed3D) selectedCount++;
+            if (Photo4.BorderStyle == BorderStyle.Fixed3D) selectedCount++;
+            if (Photo5.BorderStyle == BorderStyle.Fixed3D) selectedCount++;
+            if (Photo6.BorderStyle == BorderStyle.Fixed3D) selectedCount++;
+            if (Photo7.BorderStyle == BorderStyle.Fixed3D) selectedCount++;
+            if (Photo8.BorderStyle == BorderStyle.Fixed3D) selectedCount++;
+            if (Photo9.BorderStyle == BorderStyle.Fixed3D) selectedCount++;
+            if (Photo10.BorderStyle == BorderStyle.Fixed3D) selectedCount++;
+
+            if (selectedCount < 3)
+            {
+                MessageBox.Show("Выберите минимум 3 объектов.");
+                return;
+            }
+
             if (Photo1.BorderStyle == BorderStyle.Fixed3D || Photo2.BorderStyle == BorderStyle.Fixed3D || Photo3.BorderStyle == BorderStyle.Fixed3D
                 || Photo4.BorderStyle == BorderStyle.Fixed3D || Photo5.BorderStyle == BorderStyle.Fixed3D || Photo6.BorderStyle == BorderStyle.Fixed3D
                 || Photo7.BorderStyle == BorderStyle.Fixed3D || Photo8.BorderStyle == BorderStyle.Fixed3D || Photo9.BorderStyle == BorderStyle.Fixed3D

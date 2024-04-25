@@ -29,90 +29,96 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationWindow));
-            this.Picture2 = new System.Windows.Forms.PictureBox();
-            this.RegistrationButton = new System.Windows.Forms.Button();
-            this.NameRegText = new System.Windows.Forms.TextBox();
-            this.LoginRegText = new System.Windows.Forms.TextBox();
-            this.PasswordRegText = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture2)).BeginInit();
-            this.SuspendLayout();
+            Picture2 = new PictureBox();
+            RegistrationButton = new Button();
+            NameRegText = new TextBox();
+            LoginRegText = new TextBox();
+            PasswordRegText = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)Picture2).BeginInit();
+            SuspendLayout();
             // 
             // Picture2
             // 
-            this.Picture2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Picture2.Image = ((System.Drawing.Image)(resources.GetObject("Picture2.Image")));
-            this.Picture2.Location = new System.Drawing.Point(-5, -3);
-            this.Picture2.Name = "Picture2";
-            this.Picture2.Size = new System.Drawing.Size(893, 647);
-            this.Picture2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Picture2.TabIndex = 0;
-            this.Picture2.TabStop = false;
+            Picture2.BackgroundImageLayout = ImageLayout.Center;
+            Picture2.Image = (Image)resources.GetObject("Picture2.Image");
+            Picture2.Location = new Point(-5, -4);
+            Picture2.Margin = new Padding(3, 4, 3, 4);
+            Picture2.Name = "Picture2";
+            Picture2.Size = new Size(893, 809);
+            Picture2.SizeMode = PictureBoxSizeMode.StretchImage;
+            Picture2.TabIndex = 0;
+            Picture2.TabStop = false;
             // 
             // RegistrationButton
             // 
-            this.RegistrationButton.BackColor = System.Drawing.Color.FloralWhite;
-            this.RegistrationButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.RegistrationButton.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.RegistrationButton.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.RegistrationButton.ForeColor = System.Drawing.Color.DimGray;
-            this.RegistrationButton.Location = new System.Drawing.Point(318, 520);
-            this.RegistrationButton.Name = "RegistrationButton";
-            this.RegistrationButton.Size = new System.Drawing.Size(269, 42);
-            this.RegistrationButton.TabIndex = 5;
-            this.RegistrationButton.Text = "Зарегистрироваться";
-            this.RegistrationButton.UseVisualStyleBackColor = false;
-            this.RegistrationButton.Click += new System.EventHandler(this.RegistrationButton_Click);
+            RegistrationButton.BackColor = Color.FloralWhite;
+            RegistrationButton.BackgroundImageLayout = ImageLayout.None;
+            RegistrationButton.FlatStyle = FlatStyle.Popup;
+            RegistrationButton.Font = new Font("Microsoft YaHei UI Light", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            RegistrationButton.ForeColor = Color.DimGray;
+            RegistrationButton.Location = new Point(318, 650);
+            RegistrationButton.Margin = new Padding(3, 4, 3, 4);
+            RegistrationButton.Name = "RegistrationButton";
+            RegistrationButton.Size = new Size(269, 52);
+            RegistrationButton.TabIndex = 5;
+            RegistrationButton.Text = "Зарегистрироваться";
+            RegistrationButton.UseVisualStyleBackColor = false;
+            RegistrationButton.Click += RegistrationButton_Click;
             // 
             // NameRegText
             // 
-            this.NameRegText.BackColor = System.Drawing.Color.FloralWhite;
-            this.NameRegText.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.NameRegText.ForeColor = System.Drawing.Color.DimGray;
-            this.NameRegText.Location = new System.Drawing.Point(422, 271);
-            this.NameRegText.Multiline = true;
-            this.NameRegText.Name = "NameRegText";
-            this.NameRegText.Size = new System.Drawing.Size(305, 33);
-            this.NameRegText.TabIndex = 6;
+            NameRegText.BackColor = Color.FloralWhite;
+            NameRegText.Font = new Font("Microsoft YaHei UI Light", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            NameRegText.ForeColor = Color.DimGray;
+            NameRegText.Location = new Point(422, 339);
+            NameRegText.Margin = new Padding(3, 4, 3, 4);
+            NameRegText.Multiline = true;
+            NameRegText.Name = "NameRegText";
+            NameRegText.Size = new Size(305, 40);
+            NameRegText.TabIndex = 6;
             // 
             // LoginRegText
             // 
-            this.LoginRegText.BackColor = System.Drawing.Color.FloralWhite;
-            this.LoginRegText.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.LoginRegText.ForeColor = System.Drawing.Color.DimGray;
-            this.LoginRegText.Location = new System.Drawing.Point(422, 337);
-            this.LoginRegText.Multiline = true;
-            this.LoginRegText.Name = "LoginRegText";
-            this.LoginRegText.Size = new System.Drawing.Size(305, 33);
-            this.LoginRegText.TabIndex = 7;
+            LoginRegText.BackColor = Color.FloralWhite;
+            LoginRegText.Font = new Font("Microsoft YaHei UI Light", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LoginRegText.ForeColor = Color.DimGray;
+            LoginRegText.Location = new Point(422, 421);
+            LoginRegText.Margin = new Padding(3, 4, 3, 4);
+            LoginRegText.Multiline = true;
+            LoginRegText.Name = "LoginRegText";
+            LoginRegText.Size = new Size(305, 40);
+            LoginRegText.TabIndex = 7;
             // 
             // PasswordRegText
             // 
-            this.PasswordRegText.BackColor = System.Drawing.Color.FloralWhite;
-            this.PasswordRegText.Font = new System.Drawing.Font("Microsoft YaHei UI Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PasswordRegText.ForeColor = System.Drawing.Color.DimGray;
-            this.PasswordRegText.Location = new System.Drawing.Point(422, 401);
-            this.PasswordRegText.Multiline = true;
-            this.PasswordRegText.Name = "PasswordRegText";
-            this.PasswordRegText.Size = new System.Drawing.Size(305, 33);
-            this.PasswordRegText.TabIndex = 8;
+            PasswordRegText.BackColor = Color.FloralWhite;
+            PasswordRegText.Font = new Font("Microsoft YaHei UI Light", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            PasswordRegText.ForeColor = Color.DimGray;
+            PasswordRegText.Location = new Point(422, 501);
+            PasswordRegText.Margin = new Padding(3, 4, 3, 4);
+            PasswordRegText.Multiline = true;
+            PasswordRegText.Name = "PasswordRegText";
+            PasswordRegText.Size = new Size(305, 40);
+            PasswordRegText.TabIndex = 8;
+            PasswordRegText.KeyPress += PasswordRegText_KeyPress;
             // 
             // RegistrationWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(873, 637);
-            this.Controls.Add(this.PasswordRegText);
-            this.Controls.Add(this.LoginRegText);
-            this.Controls.Add(this.NameRegText);
-            this.Controls.Add(this.RegistrationButton);
-            this.Controls.Add(this.Picture2);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "RegistrationWindow";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)(this.Picture2)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(873, 796);
+            Controls.Add(PasswordRegText);
+            Controls.Add(LoginRegText);
+            Controls.Add(NameRegText);
+            Controls.Add(RegistrationButton);
+            Controls.Add(Picture2);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "RegistrationWindow";
+            StartPosition = FormStartPosition.CenterScreen;
+            ((System.ComponentModel.ISupportInitialize)Picture2).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
