@@ -98,6 +98,19 @@ namespace design
         private void BlackListButton_Click(object sender, EventArgs e)
         {
             listView1.Clear();
+            using (var context = new ApplicationContex())
+            {
+                var bl = context.BlackLists.ToList();
+                for (int i = 0; i < bl!.Count; i++)
+                {
+                    if (bl != null)
+                    {
+                        context.BlackLists.Remove(bl[i]);
+                        context.SaveChanges();
+                    }
+                }
+
+            }
         }
     }
 }
