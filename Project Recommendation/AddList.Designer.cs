@@ -29,106 +29,76 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddList));
-            this.Picture4 = new System.Windows.Forms.PictureBox();
-            this.Text1 = new System.Windows.Forms.Label();
-            this.AddFavButton = new System.Windows.Forms.RadioButton();
-            this.ChooseButton = new System.Windows.Forms.RadioButton();
-            this.CollectionsCombo = new System.Windows.Forms.ComboBox();
-            this.CreateCollectionButton = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture4)).BeginInit();
-            this.SuspendLayout();
+            Picture4 = new PictureBox();
+            Text1 = new Label();
+            AddFavButton = new RadioButton();
+            ChooseButton = new RadioButton();
+            CollectionsCombo = new ComboBox();
+            CreateCollectionButton = new Button();
+            ((System.ComponentModel.ISupportInitialize)Picture4).BeginInit();
+            SuspendLayout();
             // 
             // Picture4
             // 
-            this.Picture4.Image = ((System.Drawing.Image)(resources.GetObject("Picture4.Image")));
-            this.Picture4.Location = new System.Drawing.Point(-1, -2);
-            this.Picture4.Name = "Picture4";
-            this.Picture4.Size = new System.Drawing.Size(709, 381);
-            this.Picture4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Picture4.TabIndex = 0;
-            this.Picture4.TabStop = false;
+            resources.ApplyResources(Picture4, "Picture4");
+            Picture4.Name = "Picture4";
+            Picture4.TabStop = false;
             // 
             // Text1
             // 
-            this.Text1.BackColor = System.Drawing.Color.Transparent;
-            this.Text1.Font = new System.Drawing.Font("Constantia", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Text1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Text1.Location = new System.Drawing.Point(65, 39);
-            this.Text1.Name = "Text1";
-            this.Text1.Size = new System.Drawing.Size(453, 47);
-            this.Text1.TabIndex = 7;
-            this.Text1.Text = "Добавить в \r\n";
+            resources.ApplyResources(Text1, "Text1");
+            Text1.BackColor = Color.Transparent;
+            Text1.ForeColor = SystemColors.ButtonHighlight;
+            Text1.Name = "Text1";
             // 
             // AddFavButton
             // 
-            this.AddFavButton.AutoSize = true;
-            this.AddFavButton.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AddFavButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.AddFavButton.Location = new System.Drawing.Point(136, 111);
-            this.AddFavButton.Name = "AddFavButton";
-            this.AddFavButton.Size = new System.Drawing.Size(212, 41);
-            this.AddFavButton.TabIndex = 8;
-            this.AddFavButton.TabStop = true;
-            this.AddFavButton.Text = "\"Избранное\"";
-            this.AddFavButton.UseVisualStyleBackColor = true;
+            resources.ApplyResources(AddFavButton, "AddFavButton");
+            AddFavButton.ForeColor = SystemColors.ButtonHighlight;
+            AddFavButton.Name = "AddFavButton";
+            AddFavButton.TabStop = true;
+            AddFavButton.UseVisualStyleBackColor = true;
             // 
             // ChooseButton
             // 
-            this.ChooseButton.AutoSize = true;
-            this.ChooseButton.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ChooseButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ChooseButton.Location = new System.Drawing.Point(136, 183);
-            this.ChooseButton.Name = "ChooseButton";
-            this.ChooseButton.Size = new System.Drawing.Size(154, 41);
-            this.ChooseButton.TabIndex = 9;
-            this.ChooseButton.TabStop = true;
-            this.ChooseButton.Text = "Выбрать";
-            this.ChooseButton.UseVisualStyleBackColor = true;
+            resources.ApplyResources(ChooseButton, "ChooseButton");
+            ChooseButton.ForeColor = SystemColors.ButtonHighlight;
+            ChooseButton.Name = "ChooseButton";
+            ChooseButton.TabStop = true;
+            ChooseButton.UseVisualStyleBackColor = true;
             // 
             // CollectionsCombo
             // 
-            this.CollectionsCombo.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.CollectionsCombo.ForeColor = System.Drawing.Color.DimGray;
-            this.CollectionsCombo.FormattingEnabled = true;
-            this.CollectionsCombo.Location = new System.Drawing.Point(349, 182);
-            this.CollectionsCombo.Name = "CollectionsCombo";
-            this.CollectionsCombo.Size = new System.Drawing.Size(169, 45);
-            this.CollectionsCombo.TabIndex = 10;
+            resources.ApplyResources(CollectionsCombo, "CollectionsCombo");
+            CollectionsCombo.ForeColor = Color.DimGray;
+            CollectionsCombo.FormattingEnabled = true;
+            CollectionsCombo.Name = "CollectionsCombo";
             // 
             // CreateCollectionButton
             // 
-            this.CreateCollectionButton.BackColor = System.Drawing.Color.FloralWhite;
-            this.CreateCollectionButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CreateCollectionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CreateCollectionButton.Font = new System.Drawing.Font("Microsoft JhengHei UI Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateCollectionButton.ForeColor = System.Drawing.Color.DimGray;
-            this.CreateCollectionButton.Location = new System.Drawing.Point(427, 283);
-            this.CreateCollectionButton.Name = "CreateCollectionButton";
-            this.CreateCollectionButton.Size = new System.Drawing.Size(217, 44);
-            this.CreateCollectionButton.TabIndex = 15;
-            this.CreateCollectionButton.Text = "СОЗДАТЬ\r\n\r\n";
-            this.CreateCollectionButton.UseVisualStyleBackColor = false;
-            this.CreateCollectionButton.Click += new System.EventHandler(this.CreateCollectionButton_Click);
+            resources.ApplyResources(CreateCollectionButton, "CreateCollectionButton");
+            CreateCollectionButton.BackColor = Color.FloralWhite;
+            CreateCollectionButton.ForeColor = Color.DimGray;
+            CreateCollectionButton.Name = "CreateCollectionButton";
+            CreateCollectionButton.UseVisualStyleBackColor = false;
+            CreateCollectionButton.Click += CreateCollectionButton_Click;
             // 
             // AddList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(707, 379);
-            this.Controls.Add(this.CreateCollectionButton);
-            this.Controls.Add(this.CollectionsCombo);
-            this.Controls.Add(this.ChooseButton);
-            this.Controls.Add(this.AddFavButton);
-            this.Controls.Add(this.Text1);
-            this.Controls.Add(this.Picture4);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "AddList";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)(this.Picture4)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            resources.ApplyResources(this, "$this");
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonHighlight;
+            Controls.Add(CreateCollectionButton);
+            Controls.Add(CollectionsCombo);
+            Controls.Add(ChooseButton);
+            Controls.Add(AddFavButton);
+            Controls.Add(Text1);
+            Controls.Add(Picture4);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            Name = "AddList";
+            ((System.ComponentModel.ISupportInitialize)Picture4).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

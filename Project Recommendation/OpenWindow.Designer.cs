@@ -36,6 +36,7 @@
             LogInButton = new Button();
             label1 = new Label();
             label2 = new Label();
+            LanguageComboBox = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -55,7 +56,7 @@
             // LoginTextAutho
             // 
             LoginTextAutho.BackColor = Color.FloralWhite;
-            LoginTextAutho.Font = new Font("Microsoft YaHei UI Light", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LoginTextAutho.Font = new Font("Microsoft YaHei UI Light", 13.8F);
             LoginTextAutho.ForeColor = Color.DimGray;
             LoginTextAutho.Location = new Point(192, 358);
             LoginTextAutho.Margin = new Padding(3, 4, 3, 4);
@@ -69,7 +70,7 @@
             // PasswordTextAutho
             // 
             PasswordTextAutho.BackColor = Color.FloralWhite;
-            PasswordTextAutho.Font = new Font("Microsoft YaHei UI Light", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            PasswordTextAutho.Font = new Font("Microsoft YaHei UI Light", 13.8F);
             PasswordTextAutho.ForeColor = Color.DimGray;
             PasswordTextAutho.Location = new Point(192, 456);
             PasswordTextAutho.Margin = new Padding(3, 4, 3, 4);
@@ -85,7 +86,7 @@
             RegistrationButton.BackColor = Color.FloralWhite;
             RegistrationButton.BackgroundImageLayout = ImageLayout.None;
             RegistrationButton.FlatStyle = FlatStyle.Popup;
-            RegistrationButton.Font = new Font("Microsoft YaHei UI Light", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            RegistrationButton.Font = new Font("Microsoft YaHei UI Light", 13.8F);
             RegistrationButton.ForeColor = Color.DimGray;
             RegistrationButton.Location = new Point(318, 705);
             RegistrationButton.Margin = new Padding(3, 4, 3, 4);
@@ -101,7 +102,7 @@
             LogInButton.BackColor = Color.FloralWhite;
             LogInButton.BackgroundImageLayout = ImageLayout.None;
             LogInButton.FlatStyle = FlatStyle.Popup;
-            LogInButton.Font = new Font("Microsoft YaHei UI Light", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            LogInButton.Font = new Font("Microsoft YaHei UI Light", 13.8F);
             LogInButton.ForeColor = Color.DimGray;
             LogInButton.Location = new Point(331, 532);
             LogInButton.Margin = new Padding(3, 4, 3, 4);
@@ -115,30 +116,44 @@
             // label1
             // 
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Constantia", 28.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Constantia", 28.2F);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(192, 200);
+            label1.Location = new Point(156, 200);
             label1.Name = "label1";
-            label1.Size = new Size(515, 84);
+            label1.Size = new Size(583, 84);
             label1.TabIndex = 5;
             label1.Text = "Твой дом там, где ты";
             // 
             // label2
             // 
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Constantia", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            label2.Font = new Font("Constantia", 16.2F);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(294, 620);
+            label2.Location = new Point(299, 624);
             label2.Name = "label2";
-            label2.Size = new Size(339, 58);
+            label2.Size = new Size(313, 58);
             label2.TabIndex = 6;
             label2.Text = "Нет аккаунта? Создай!";
+            // 
+            // LanguageComboBox
+            // 
+            LanguageComboBox.Dock = DockStyle.Right;
+            LanguageComboBox.Font = new Font("Microsoft YaHei UI Light", 13.8F);
+            LanguageComboBox.ForeColor = Color.DimGray;
+            LanguageComboBox.FormattingEnabled = true;
+            LanguageComboBox.Items.AddRange(new object[] { "English", "Русский" });
+            LanguageComboBox.Location = new Point(701, 0);
+            LanguageComboBox.Name = "LanguageComboBox";
+            LanguageComboBox.Size = new Size(172, 38);
+            LanguageComboBox.TabIndex = 7;
+            LanguageComboBox.SelectedIndexChanged += LanguageComboBox_SelectedIndexChanged;
             // 
             // OpenWindow
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(873, 789);
+            Controls.Add(LanguageComboBox);
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(RegistrationButton);
@@ -164,6 +179,7 @@
         private System.Windows.Forms.Button LogInButton;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private ComboBox LanguageComboBox;
     }
 }
 
