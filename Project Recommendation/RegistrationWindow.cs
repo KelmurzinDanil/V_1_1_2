@@ -1,4 +1,6 @@
 ﻿using DB_993;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace design
 {
@@ -51,12 +53,12 @@ namespace design
                     MessageBox.Show("Пользователь с такой электронной почтой уже существует.");
                     return;
                 }
-
+                HeshPassword heshPassword = new HeshPassword();
                 var newUser = new User
                 {
                     Name = NameRegText.Text,
                     Email = LoginRegText.Text,
-                    Password = PasswordRegText.Text
+                    Password = heshPassword.GetPassword(PasswordRegText.Text)
                 };
 
                 context.Users.Add(newUser);
@@ -67,6 +69,8 @@ namespace design
                 mainWindow.ShowDialog();
                 
             }
+
         }
+       
     }
 }

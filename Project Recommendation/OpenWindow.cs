@@ -90,10 +90,11 @@ namespace design
                 MessageBox.Show("Заполните все поля.");
                 return;
             }
-
+            HeshPassword heshPassword = new HeshPassword();
             using (var context = new ApplicationContex())
             {
-                var user = context.Users.FirstOrDefault(user => user.Email == LoginTextAutho.Text && user.Password == PasswordTextAutho.Text);
+                var user = context.Users.FirstOrDefault(user => user.Email == LoginTextAutho.Text 
+                && user.Password == heshPassword.GetPassword(PasswordTextAutho.Text));
                 if (user == null)
                 {
                     MessageBox.Show("Неверный адрес электронной почты или пароль.");
