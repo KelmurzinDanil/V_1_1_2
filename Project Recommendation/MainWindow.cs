@@ -4,10 +4,10 @@ namespace design
 {
     public partial class MainWindow : Form
     {
-        string Email { get; set; }
+        string? Email { get; set; }
         public int I { get; set; }
         int IdRealryForFav { get; set; }
-        Dictionary<int, decimal> DictRecom { get; set; }
+        Dictionary<int, decimal>? DictRecom { get; set; }
         public MainWindow()
         {
             InitializeComponent();
@@ -53,7 +53,7 @@ namespace design
         }
         public void FillRecommendation()
         {
-            if (I >= 0 && I < DictRecom.Count)
+            if (I >= 0 && I < DictRecom!.Count)
             {
 
 
@@ -161,7 +161,7 @@ namespace design
 
         private void ProfileButton_Click(object sender, EventArgs e)
         {
-            var profile = new Profile(Email);
+            var profile = new Profile(Email!);
             profile.Show();
         }
 

@@ -7,7 +7,7 @@ namespace design
         string? PurposeCombo { get; set; }
         string? RealtyCombo { get; set; }
         string? TownCombo { get; set; }
-        List<Realty> ExistingRealty { get; set; }
+        List<Realty>? ExistingRealty { get; set; }
         public TestSecondWindow()
         {
             InitializeComponent();
@@ -98,7 +98,7 @@ namespace design
         {
             if (Photo1.Image != null)
             {
-                Card card = new Card(ExistingRealty[0]);
+                Card card = new Card(ExistingRealty![0]);
                 card.Show();
             }
 
@@ -108,7 +108,7 @@ namespace design
         {
             if (Photo2.Image != null)
             {
-                Card card = new Card(ExistingRealty[1]);
+                Card card = new Card(ExistingRealty![1]);
                 card.Show();
             }
 
@@ -118,7 +118,7 @@ namespace design
         {
             if (Photo3.Image != null)
             {
-                Card card = new Card(ExistingRealty[2]);
+                Card card = new Card(ExistingRealty![2]);
                 card.Show();
             }
 
@@ -128,7 +128,7 @@ namespace design
         {
             if (Photo4.Image != null)
             {
-                Card card = new Card(ExistingRealty[3]);
+                Card card = new Card(ExistingRealty![3]);
                 card.Show();
             }
 
@@ -138,7 +138,7 @@ namespace design
         {
             if (Photo5.Image != null)
             {
-                Card card = new Card(ExistingRealty[4]);
+                Card card = new Card(ExistingRealty![4]);
                 card.Show();
             }
 
@@ -148,7 +148,7 @@ namespace design
         {
             if (Photo6.Image != null)
             {
-                Card card = new Card(ExistingRealty[5]);
+                Card card = new Card(ExistingRealty![5]);
                 card.Show();
             }
 
@@ -158,7 +158,7 @@ namespace design
         {
             if (Photo7.Image != null)
             {
-                Card card = new Card(ExistingRealty[6]);
+                Card card = new Card(ExistingRealty![6]);
                 card.Show();
             }
 
@@ -168,7 +168,7 @@ namespace design
         {
             if (Photo8.Image != null)
             {
-                Card card = new Card(ExistingRealty[7]);
+                Card card = new Card(ExistingRealty![7]);
                 card.Show();
             }
 
@@ -178,7 +178,7 @@ namespace design
         {
             if (Photo9.Image != null)
             {
-                Card card = new Card(ExistingRealty[8]);
+                Card card = new Card(ExistingRealty![8]);
                 card.Show();
             }
 
@@ -188,7 +188,7 @@ namespace design
         {
             if (Photo10.Image != null)
             {
-                Card card = new Card(ExistingRealty[9]);
+                Card card = new Card(ExistingRealty![9]);
                 card.Show();
             }
 
@@ -424,43 +424,43 @@ namespace design
                 var listH = new List<Realty>();
                 if (Photo1.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    listH.Add(ExistingRealty[0]);
+                    listH.Add(ExistingRealty![0]);
                 }
                 if (Photo2.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    listH.Add(ExistingRealty[1]);
+                    listH.Add(ExistingRealty![1]);
                 }
                 if (Photo3.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    listH.Add(ExistingRealty[2]);
+                    listH.Add(ExistingRealty![2]);
                 }
                 if (Photo4.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    listH.Add(ExistingRealty[3]);
+                    listH.Add(ExistingRealty![3]);
                 }
                 if (Photo5.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    listH.Add(ExistingRealty[4]);
+                    listH.Add(ExistingRealty![4]);
                 }
                 if (Photo6.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    listH.Add(ExistingRealty[5]);
+                    listH.Add(ExistingRealty![5]);
                 }
                 if (Photo7.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    listH.Add(ExistingRealty[6]);
+                    listH.Add(ExistingRealty![6]);
                 }
                 if (Photo8.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    listH.Add(ExistingRealty[7]);
+                    listH.Add(ExistingRealty![7]);
                 }
                 if (Photo9.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    listH.Add(ExistingRealty[8]);
+                    listH.Add(ExistingRealty![8]);
                 }
                 if (Photo10.BorderStyle == BorderStyle.Fixed3D)
                 {
-                    listH.Add(ExistingRealty[9]);
+                    listH.Add(ExistingRealty![9]);
                 }
                 GetRecommendation getRecommendation = new GetRecommendation(listH);
                 MainWindow mainWindow = new MainWindow(getRecommendation);

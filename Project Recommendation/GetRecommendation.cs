@@ -2,7 +2,7 @@
 {
     public class GetRecommendation
     {
-        public List<Realty> listRealty { get; set; }
+        public List<Realty>? listRealty { get; set; }
         public decimal RatingPrice { get; set; }
         public decimal RatingFloоr { get; set; }
         public decimal RatingRooms { get; set; }
@@ -21,7 +21,7 @@
         }
         public void GetRatingRealty()
         {
-            RatingCity = listRealty[0].City;
+            RatingCity = listRealty![0].City;
             RatingType = listRealty[0].Type;
             RatingForWhat = listRealty[0].ForWhat;
 

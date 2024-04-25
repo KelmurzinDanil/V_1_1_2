@@ -5,7 +5,7 @@ namespace design
     public partial class Favorite : Form
     {
         public int IdRealryForFav { get; set; }
-        public List<Realty> ListRealty { get; set; }
+        public List<Realty>? ListRealty { get; set; }
         public Favorite()
         {
 

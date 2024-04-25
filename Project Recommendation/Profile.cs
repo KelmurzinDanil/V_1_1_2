@@ -4,7 +4,7 @@ namespace design
 {
     public partial class Profile : Form
     {
-        string Email_ { get; set; }
+        string? Email_ { get; set; }
 
         public Profile()
         {

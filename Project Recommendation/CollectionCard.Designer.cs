@@ -173,7 +173,7 @@
         private System.Windows.Forms.PictureBox Picture7;
         private System.Windows.Forms.Button EditButton;
         private System.Windows.Forms.Button SaveButton;
-        private System.Windows.Forms.Label Name;
+        new private System.Windows.Forms.Label Name;
         private System.Windows.Forms.TextBox NameText;
     }
 }
