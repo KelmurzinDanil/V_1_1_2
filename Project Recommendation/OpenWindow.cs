@@ -6,8 +6,10 @@ namespace design
     {
         public OpenWindow()
         {
-            ApplicationContex applicationContex = new ApplicationContex();
-            applicationContex.ApplicationContext();
+            using (var applicationContex = new ApplicationContex())
+            {
+                applicationContex.ApplicationContext();
+            }
             InitializeComponent();
             MaximizeBox = false;
             label1.Parent = pictureBox1;
@@ -23,7 +25,7 @@ namespace design
         {
             if (PasswordTextAutho.Text == "Пароль")
             {
-                PasswordTextAutho.Text = "";
+                PasswordTextAutho.Text = String.Empty;
                 PasswordTextAutho.PasswordChar = '*';
             }
         }
@@ -45,7 +47,7 @@ namespace design
             {
                 if (LoginTextAutho.Text == "Электронная почта")
                 {
-                    LoginTextAutho.Text = "";
+                    LoginTextAutho.Text = String.Empty;
                     LoginTextAutho.ForeColor = Color.Black;
                 }
             };

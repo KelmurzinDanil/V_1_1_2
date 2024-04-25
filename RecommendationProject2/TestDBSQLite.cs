@@ -70,7 +70,7 @@ namespace RecommendationProject2
 
         }
         [Test]
-        public void DeleteDataBD()
+        public void DeleteDataBD() // Удаление данных из БД
         {
             using(var context = new TestDBContext())
             {

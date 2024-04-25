@@ -11,20 +11,20 @@ namespace design
         public MainWindow()
         {
             InitializeComponent();
-            Disign();
+            Design();
 
         }
         public MainWindow(GetRecommendation getRecommendation)
         {
             InitializeComponent();
-            Disign();
+            Design();
             FullListRecommendation(getRecommendation);
             FillRecommendation();
         }
         public MainWindow(string email)
         {
             InitializeComponent();
-            Disign();
+            Design();
             Email = email;
         }
         public void FullListRecommendation(GetRecommendation getRecommendation)
@@ -81,18 +81,23 @@ namespace design
         public decimal CalculateOverallRating(GetRecommendation getRecommendation, Realty existingRealty)
         {
 
-            decimal comparisonPrice = getRecommendation.RatingPrice > existingRealty.Price ? (existingRealty.Price / getRecommendation.RatingPrice) : (getRecommendation.RatingPrice / existingRealty.Price);
-            decimal comparisonFloor = getRecommendation.RatingFloоr > existingRealty.Floor ? (existingRealty.Floor / getRecommendation.RatingFloоr) : (getRecommendation.RatingFloоr / existingRealty.Floor);
-            decimal comparisonSquare = getRecommendation.RatingSquare > existingRealty.Square ? (existingRealty.Square / getRecommendation.RatingPrice) : (getRecommendation.RatingSquare / existingRealty.Square);
-            decimal comparisonRooms = getRecommendation.RatingRooms > existingRealty.Rooms ? (existingRealty.Rooms / getRecommendation.RatingRooms) : (getRecommendation.RatingRooms / existingRealty.Rooms);
+            decimal comparisonPrice = getRecommendation.RatingPrice > existingRealty.Price
+                ? (existingRealty.Price / getRecommendation.RatingPrice) : (getRecommendation.RatingPrice / existingRealty.Price);
+            decimal comparisonFloor = getRecommendation.RatingFloоr > existingRealty.Floor 
+                ? (existingRealty.Floor / getRecommendation.RatingFloоr) : (getRecommendation.RatingFloоr / existingRealty.Floor);
+            decimal comparisonSquare = getRecommendation.RatingSquare > existingRealty.Square
+                ? (existingRealty.Square / getRecommendation.RatingPrice) : (getRecommendation.RatingSquare / existingRealty.Square);
+            decimal comparisonRooms = getRecommendation.RatingRooms > existingRealty.Rooms
+                ? (existingRealty.Rooms / getRecommendation.RatingRooms) : (getRecommendation.RatingRooms / existingRealty.Rooms);
             int comparisonCity = getRecommendation.RatingCity == existingRealty.City ? (1) : (0);
             int comparisonType = getRecommendation.RatingType == existingRealty.Type ? (1) : (0);
             int comparisonForWgat = getRecommendation.RatingForWhat == existingRealty.ForWhat ? (1) : (0);
 
-            decimal overallRating = (comparisonPrice + comparisonFloor + comparisonSquare + comparisonRooms + comparisonCity + comparisonType + comparisonForWgat) / 7;
+            decimal overallRating = (comparisonPrice + comparisonFloor + comparisonSquare + comparisonRooms + comparisonCity
+                + comparisonType + comparisonForWgat) / 7;
             return overallRating;
         }
-        public void Disign()
+        public void Design()
         {
             label1.Parent = Picture3;
             label1.BackColor = Color.Transparent;
