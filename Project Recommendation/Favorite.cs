@@ -70,6 +70,19 @@ namespace design
         private void BlackListButton_Click(object sender, EventArgs e)
         {
             listView1.Clear();
+            using (var context = new ApplicationContex())
+            {
+                var fav = context.Favourites.ToList();
+                for(int i = 0; i < fav!.Count; i++)
+                {
+                    if(fav != null)
+                {
+                        context.Favourites.Remove(fav[i]);
+                        context.SaveChanges();
+                    }
+                }
+                
+            }
         }
     }
 }

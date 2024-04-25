@@ -55,7 +55,7 @@ namespace design
                 MessageBox.Show("Регистрация прошла успешно!");
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.ShowDialog();
-                this.Close();
+                
             }
         }
     }
