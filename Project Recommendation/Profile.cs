@@ -5,19 +5,13 @@ namespace design
     public partial class Profile : Form
     {
         string Email_ { get; set; }
+
         public Profile()
         {
             InitializeComponent();
             SaveButton.Hide();
             LoadUserData();
-            label1.Parent = Picture4;
-            label1.BackColor = Color.Transparent;
-            label2.Parent = Picture4;
-            label2.BackColor = Color.Transparent;
-            label3.Parent = Picture4;
-            label3.BackColor = Color.Transparent;
-            label4.Parent = Picture4;
-            label4.BackColor = Color.Transparent;
+            Design();
             NameText.ReadOnly = true;
             EmailText.ReadOnly = true;
             PasswordText.ReadOnly = true;
@@ -32,6 +26,17 @@ namespace design
             InitializeComponent();
             SaveButton.Hide();
             LoadUserData();
+            Design();       
+            NameText.ReadOnly = true;
+            EmailText.ReadOnly = true;
+            PasswordText.ReadOnly = true;
+            EmailText.KeyPress += EmailText_KeyPress;
+            PasswordText.KeyPress += PasswordText_KeyPress;
+
+        }
+
+        public void Design()
+        {
             label1.Parent = Picture4;
             label1.BackColor = Color.Transparent;
             label2.Parent = Picture4;
@@ -39,13 +44,7 @@ namespace design
             label3.Parent = Picture4;
             label3.BackColor = Color.Transparent;
             label4.Parent = Picture4;
-            label4.BackColor = Color.Transparent;          
-            NameText.ReadOnly = true;
-            EmailText.ReadOnly = true;
-            PasswordText.ReadOnly = true;
-            EmailText.KeyPress += EmailText_KeyPress;
-            PasswordText.KeyPress += PasswordText_KeyPress;
-
+            label4.BackColor = Color.Transparent;
         }
 
         private void PasswordText_KeyPress(object? sender, KeyPressEventArgs e)

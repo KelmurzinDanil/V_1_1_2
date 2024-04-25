@@ -12,17 +12,20 @@ namespace design
             }
             InitializeComponent();
             MaximizeBox = false;
-            label1.Parent = pictureBox1;
-            label1.BackColor = Color.Transparent;
-            label2.Parent = pictureBox1;
-            label2.BackColor = Color.Transparent;
+            Design();
             LoginTextAutho.PlaceholderText = "Электронная почта";
             PasswordTextAutho.PlaceholderText = "Пароль";
             LoginTextAutho.KeyPress += LoginTextAutho_KeyPress;
             PasswordTextAutho.Enter += PasswordTextAutho_Enter;
             PasswordTextAutho.KeyPress += PasswordTextAutho_KeyPress;
         }
-
+        public void Design()
+        {
+            label1.Parent = pictureBox1;
+            label1.BackColor = Color.Transparent;
+            label2.Parent = pictureBox1;
+            label2.BackColor = Color.Transparent;
+        }
         private void PasswordTextAutho_KeyPress(object? sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == ' ')

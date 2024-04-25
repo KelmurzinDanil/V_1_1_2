@@ -11,19 +11,25 @@ namespace design
         public TestSecondWindow()
         {
             InitializeComponent();
-            Text1.Parent = Picture8;
-            Text1.BackColor = Color.Transparent;
+            Design();
         }
+
         public TestSecondWindow(string townCombo, string realtyCombo, string purposeCombo)
         {
             InitializeComponent();
-            Text1.Parent = Picture8;
-            Text1.BackColor = Color.Transparent;
+            Design();
             TownCombo = townCombo;
             RealtyCombo = realtyCombo;
             PurposeCombo = purposeCombo;
             FillPicture();
         }
+
+        public void Design()
+        {
+            Text1.Parent = Picture8;
+            Text1.BackColor = Color.Transparent;
+        }
+
         public void FillPicture()
         {
             using (var context = new ApplicationContex())

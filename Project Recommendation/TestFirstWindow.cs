@@ -5,6 +5,11 @@
         public TestFirstWindow()
         {
             InitializeComponent();
+            Design();
+        }
+
+        public void Design()
+        {
             label1.Parent = Picture7;
             label1.BackColor = Color.Transparent;
             Town.Parent = Picture7;

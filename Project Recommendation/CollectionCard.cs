@@ -5,6 +5,11 @@
         public CollectionCard()
         {
             InitializeComponent();
+            Design();
+        }
+
+        public void Design()
+        {
             Name.Parent = Picture7;
             Name.BackColor = Color.Transparent;
             ProfileButton.Parent = Picture7;

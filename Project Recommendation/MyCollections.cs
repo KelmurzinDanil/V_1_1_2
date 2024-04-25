@@ -5,6 +5,11 @@
         public MyCollections()
         {
             InitializeComponent();
+            Design();
+        }
+
+        public void Design()
+        {
             ProfileButton.Parent = Picture7;
             ProfileButton.BackColor = Color.Transparent;
             ProfileButton.FlatAppearance.BorderSize = 0;
