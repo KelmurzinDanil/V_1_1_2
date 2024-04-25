@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Card));
             Children = new Label();
             Animals = new Label();
             Address = new Label();
@@ -40,94 +41,65 @@
             // 
             // Children
             // 
+            resources.ApplyResources(Children, "Children");
             Children.BackColor = Color.Transparent;
-            Children.Font = new Font("Constantia", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Children.ForeColor = Color.DimGray;
-            Children.Location = new Point(12, 70);
             Children.Name = "Children";
-            Children.Size = new Size(165, 56);
-            Children.TabIndex = 9;
-            Children.Text = "Площадь:";
             // 
             // Animals
             // 
+            resources.ApplyResources(Animals, "Animals");
             Animals.BackColor = Color.Transparent;
-            Animals.Font = new Font("Constantia", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Animals.ForeColor = Color.DimGray;
-            Animals.Location = new Point(12, 126);
             Animals.Name = "Animals";
-            Animals.Size = new Size(125, 54);
-            Animals.TabIndex = 10;
-            Animals.Text = "Цена:";
             // 
             // Address
             // 
+            resources.ApplyResources(Address, "Address");
             Address.BackColor = Color.Transparent;
-            Address.Font = new Font("Constantia", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Address.ForeColor = Color.DimGray;
-            Address.Location = new Point(12, 11);
             Address.Name = "Address";
-            Address.Size = new Size(125, 59);
-            Address.TabIndex = 11;
-            Address.Text = "Адрес:";
             // 
             // label1
             // 
+            resources.ApplyResources(label1, "label1");
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Constantia", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
             label1.ForeColor = Color.DimGray;
-            label1.Location = new Point(12, 180);
             label1.Name = "label1";
-            label1.Size = new Size(125, 54);
-            label1.TabIndex = 12;
-            label1.Text = "Этаж:";
             // 
             // AddressText
             // 
+            resources.ApplyResources(AddressText, "AddressText");
             AddressText.BackColor = Color.Transparent;
-            AddressText.Font = new Font("Constantia", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
             AddressText.ForeColor = Color.DimGray;
-            AddressText.Location = new Point(143, 11);
             AddressText.Name = "AddressText";
-            AddressText.Size = new Size(369, 59);
-            AddressText.TabIndex = 13;
             // 
             // SquareText
             // 
+            resources.ApplyResources(SquareText, "SquareText");
             SquareText.BackColor = Color.Transparent;
-            SquareText.Font = new Font("Constantia", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
             SquareText.ForeColor = Color.DimGray;
-            SquareText.Location = new Point(183, 70);
             SquareText.Name = "SquareText";
-            SquareText.Size = new Size(329, 59);
-            SquareText.TabIndex = 14;
             // 
             // PriceText
             // 
+            resources.ApplyResources(PriceText, "PriceText");
             PriceText.BackColor = Color.Transparent;
-            PriceText.Font = new Font("Constantia", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
             PriceText.ForeColor = Color.DimGray;
-            PriceText.Location = new Point(124, 126);
             PriceText.Name = "PriceText";
-            PriceText.Size = new Size(388, 59);
-            PriceText.TabIndex = 15;
             // 
             // FloorText
             // 
+            resources.ApplyResources(FloorText, "FloorText");
             FloorText.BackColor = Color.Transparent;
-            FloorText.Font = new Font("Constantia", 18F, FontStyle.Regular, GraphicsUnit.Point, 204);
             FloorText.ForeColor = Color.DimGray;
-            FloorText.Location = new Point(113, 180);
             FloorText.Name = "FloorText";
-            FloorText.Size = new Size(399, 59);
-            FloorText.TabIndex = 16;
             // 
             // Card
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FloralWhite;
-            ClientSize = new Size(524, 249);
             Controls.Add(FloorText);
             Controls.Add(PriceText);
             Controls.Add(SquareText);
@@ -137,7 +109,6 @@
             Controls.Add(Animals);
             Controls.Add(Children);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Card";
             ResumeLayout(false);
         }

@@ -13477,4 +13477,28 @@
         X56li6sjmsYPyx5XyP8HwPwzaQQ0sHkAAAAASUVORK5CYII=
 </value>
   </data>
+  <data name="LoginTextAutho.Text" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="PasswordTextAutho.Text" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="RegistrationButton.Text" xml:space="preserve">
+    <value>Sign up</value>
+  </data>
+  <data name="LogInButton.Text" xml:space="preserve">
+    <value>Log in</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>157, 200</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>581, 84</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Your home is where you are</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>No account? Create it!</value>
+  </data>
 </root>

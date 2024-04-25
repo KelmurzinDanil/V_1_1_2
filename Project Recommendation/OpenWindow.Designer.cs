@@ -42,117 +42,72 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+            resources.ApplyResources(pictureBox1, "pictureBox1");
             pictureBox1.BorderStyle = BorderStyle.Fixed3D;
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(-7, 0);
-            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(889, 808);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // LoginTextAutho
             // 
+            resources.ApplyResources(LoginTextAutho, "LoginTextAutho");
             LoginTextAutho.BackColor = Color.FloralWhite;
-            LoginTextAutho.Font = new Font("Microsoft YaHei UI Light", 13.8F);
             LoginTextAutho.ForeColor = Color.DimGray;
-            LoginTextAutho.Location = new Point(192, 358);
-            LoginTextAutho.Margin = new Padding(3, 4, 3, 4);
-            LoginTextAutho.Multiline = true;
             LoginTextAutho.Name = "LoginTextAutho";
-            LoginTextAutho.Size = new Size(502, 49);
-            LoginTextAutho.TabIndex = 1;
-            LoginTextAutho.Text = "Электронная почта";
             LoginTextAutho.Click += LoginText_Click;
             // 
             // PasswordTextAutho
             // 
+            resources.ApplyResources(PasswordTextAutho, "PasswordTextAutho");
             PasswordTextAutho.BackColor = Color.FloralWhite;
-            PasswordTextAutho.Font = new Font("Microsoft YaHei UI Light", 13.8F);
             PasswordTextAutho.ForeColor = Color.DimGray;
-            PasswordTextAutho.Location = new Point(192, 456);
-            PasswordTextAutho.Margin = new Padding(3, 4, 3, 4);
-            PasswordTextAutho.Multiline = true;
             PasswordTextAutho.Name = "PasswordTextAutho";
-            PasswordTextAutho.Size = new Size(502, 49);
-            PasswordTextAutho.TabIndex = 2;
-            PasswordTextAutho.Text = "Пароль";
             PasswordTextAutho.Click += PasswordText_Click;
             // 
             // RegistrationButton
             // 
+            resources.ApplyResources(RegistrationButton, "RegistrationButton");
             RegistrationButton.BackColor = Color.FloralWhite;
-            RegistrationButton.BackgroundImageLayout = ImageLayout.None;
-            RegistrationButton.FlatStyle = FlatStyle.Popup;
-            RegistrationButton.Font = new Font("Microsoft YaHei UI Light", 13.8F);
             RegistrationButton.ForeColor = Color.DimGray;
-            RegistrationButton.Location = new Point(318, 705);
-            RegistrationButton.Margin = new Padding(3, 4, 3, 4);
             RegistrationButton.Name = "RegistrationButton";
-            RegistrationButton.Size = new Size(269, 52);
-            RegistrationButton.TabIndex = 4;
-            RegistrationButton.Text = "Зарегистрироваться";
             RegistrationButton.UseVisualStyleBackColor = false;
             RegistrationButton.Click += RegistrationButton_Click;
             // 
             // LogInButton
             // 
+            resources.ApplyResources(LogInButton, "LogInButton");
             LogInButton.BackColor = Color.FloralWhite;
-            LogInButton.BackgroundImageLayout = ImageLayout.None;
-            LogInButton.FlatStyle = FlatStyle.Popup;
-            LogInButton.Font = new Font("Microsoft YaHei UI Light", 13.8F);
             LogInButton.ForeColor = Color.DimGray;
-            LogInButton.Location = new Point(331, 532);
-            LogInButton.Margin = new Padding(3, 4, 3, 4);
             LogInButton.Name = "LogInButton";
-            LogInButton.Size = new Size(221, 55);
-            LogInButton.TabIndex = 3;
-            LogInButton.Text = "Войти";
             LogInButton.UseVisualStyleBackColor = false;
             LogInButton.Click += LogInButton_Click;
             // 
             // label1
             // 
+            resources.ApplyResources(label1, "label1");
             label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Constantia", 28.2F);
             label1.ForeColor = SystemColors.ButtonHighlight;
-            label1.Location = new Point(156, 200);
             label1.Name = "label1";
-            label1.Size = new Size(583, 84);
-            label1.TabIndex = 5;
-            label1.Text = "Твой дом там, где ты";
             // 
             // label2
             // 
+            resources.ApplyResources(label2, "label2");
             label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Constantia", 16.2F);
             label2.ForeColor = SystemColors.ButtonHighlight;
-            label2.Location = new Point(299, 624);
             label2.Name = "label2";
-            label2.Size = new Size(313, 58);
-            label2.TabIndex = 6;
-            label2.Text = "Нет аккаунта? Создай!";
             // 
             // LanguageComboBox
             // 
-            LanguageComboBox.Dock = DockStyle.Right;
-            LanguageComboBox.Font = new Font("Microsoft YaHei UI Light", 13.8F);
+            resources.ApplyResources(LanguageComboBox, "LanguageComboBox");
             LanguageComboBox.ForeColor = Color.DimGray;
             LanguageComboBox.FormattingEnabled = true;
-            LanguageComboBox.Items.AddRange(new object[] { "English", "Русский" });
-            LanguageComboBox.Location = new Point(701, 0);
+            LanguageComboBox.Items.AddRange(new object[] { resources.GetString("LanguageComboBox.Items"), resources.GetString("LanguageComboBox.Items1") });
             LanguageComboBox.Name = "LanguageComboBox";
-            LanguageComboBox.Size = new Size(172, 38);
-            LanguageComboBox.TabIndex = 7;
             LanguageComboBox.SelectedIndexChanged += LanguageComboBox_SelectedIndexChanged;
             // 
             // OpenWindow
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(873, 789);
             Controls.Add(LanguageComboBox);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -162,9 +117,7 @@
             Controls.Add(LoginTextAutho);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "OpenWindow";
-            StartPosition = FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();

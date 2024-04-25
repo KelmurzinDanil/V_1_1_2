@@ -29,108 +29,77 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateNewList));
-            this.Picture5 = new System.Windows.Forms.PictureBox();
-            this.Text1 = new System.Windows.Forms.Label();
-            this.Text2 = new System.Windows.Forms.Label();
-            this.Text3 = new System.Windows.Forms.Label();
-            this.DescriptionCollectionText = new System.Windows.Forms.TextBox();
-            this.CreateCollectionButton = new System.Windows.Forms.Button();
-            this.CollectionNameText = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.Picture5)).BeginInit();
-            this.SuspendLayout();
+            Picture5 = new PictureBox();
+            Text1 = new Label();
+            Text2 = new Label();
+            Text3 = new Label();
+            DescriptionCollectionText = new TextBox();
+            CreateCollectionButton = new Button();
+            CollectionNameText = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)Picture5).BeginInit();
+            SuspendLayout();
             // 
             // Picture5
             // 
-            this.Picture5.Image = ((System.Drawing.Image)(resources.GetObject("Picture5.Image")));
-            this.Picture5.Location = new System.Drawing.Point(-2, 0);
-            this.Picture5.Name = "Picture5";
-            this.Picture5.Size = new System.Drawing.Size(753, 331);
-            this.Picture5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Picture5.TabIndex = 0;
-            this.Picture5.TabStop = false;
+            resources.ApplyResources(Picture5, "Picture5");
+            Picture5.Name = "Picture5";
+            Picture5.TabStop = false;
             // 
             // Text1
             // 
-            this.Text1.BackColor = System.Drawing.Color.Transparent;
-            this.Text1.Font = new System.Drawing.Font("Constantia", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Text1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Text1.Location = new System.Drawing.Point(174, 25);
-            this.Text1.Name = "Text1";
-            this.Text1.Size = new System.Drawing.Size(453, 47);
-            this.Text1.TabIndex = 8;
-            this.Text1.Text = "Создать новую подборку";
+            resources.ApplyResources(Text1, "Text1");
+            Text1.BackColor = Color.Transparent;
+            Text1.ForeColor = SystemColors.ButtonHighlight;
+            Text1.Name = "Text1";
             // 
             // Text2
             // 
-            this.Text2.BackColor = System.Drawing.Color.Transparent;
-            this.Text2.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Text2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Text2.Location = new System.Drawing.Point(89, 86);
-            this.Text2.Name = "Text2";
-            this.Text2.Size = new System.Drawing.Size(178, 39);
-            this.Text2.TabIndex = 9;
-            this.Text2.Text = "Название\r\n\r\n";
+            resources.ApplyResources(Text2, "Text2");
+            Text2.BackColor = Color.Transparent;
+            Text2.ForeColor = SystemColors.ButtonHighlight;
+            Text2.Name = "Text2";
             // 
             // Text3
             // 
-            this.Text3.BackColor = System.Drawing.Color.Transparent;
-            this.Text3.Font = new System.Drawing.Font("Constantia", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Text3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Text3.Location = new System.Drawing.Point(89, 140);
-            this.Text3.Name = "Text3";
-            this.Text3.Size = new System.Drawing.Size(178, 39);
-            this.Text3.TabIndex = 10;
-            this.Text3.Text = "Описание";
+            resources.ApplyResources(Text3, "Text3");
+            Text3.BackColor = Color.Transparent;
+            Text3.ForeColor = SystemColors.ButtonHighlight;
+            Text3.Name = "Text3";
             // 
             // DescriptionCollectionText
             // 
-            this.DescriptionCollectionText.Location = new System.Drawing.Point(296, 140);
-            this.DescriptionCollectionText.Multiline = true;
-            this.DescriptionCollectionText.Name = "DescriptionCollectionText";
-            this.DescriptionCollectionText.Size = new System.Drawing.Size(382, 101);
-            this.DescriptionCollectionText.TabIndex = 11;
+            resources.ApplyResources(DescriptionCollectionText, "DescriptionCollectionText");
+            DescriptionCollectionText.Name = "DescriptionCollectionText";
             // 
             // CreateCollectionButton
             // 
-            this.CreateCollectionButton.BackColor = System.Drawing.Color.FloralWhite;
-            this.CreateCollectionButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.CreateCollectionButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.CreateCollectionButton.Font = new System.Drawing.Font("Microsoft JhengHei UI Light", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CreateCollectionButton.ForeColor = System.Drawing.Color.DimGray;
-            this.CreateCollectionButton.Location = new System.Drawing.Point(267, 263);
-            this.CreateCollectionButton.Name = "CreateCollectionButton";
-            this.CreateCollectionButton.Size = new System.Drawing.Size(213, 38);
-            this.CreateCollectionButton.TabIndex = 16;
-            this.CreateCollectionButton.Text = "СОЗДАТЬ\r\n\r\n";
-            this.CreateCollectionButton.UseVisualStyleBackColor = false;
+            resources.ApplyResources(CreateCollectionButton, "CreateCollectionButton");
+            CreateCollectionButton.BackColor = Color.FloralWhite;
+            CreateCollectionButton.ForeColor = Color.DimGray;
+            CreateCollectionButton.Name = "CreateCollectionButton";
+            CreateCollectionButton.UseVisualStyleBackColor = false;
             // 
             // CollectionNameText
             // 
-            this.CollectionNameText.Location = new System.Drawing.Point(296, 86);
-            this.CollectionNameText.Multiline = true;
-            this.CollectionNameText.Name = "CollectionNameText";
-            this.CollectionNameText.Size = new System.Drawing.Size(382, 39);
-            this.CollectionNameText.TabIndex = 17;
+            resources.ApplyResources(CollectionNameText, "CollectionNameText");
+            CollectionNameText.Name = "CollectionNameText";
             // 
             // CreateNewList
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(750, 330);
-            this.Controls.Add(this.CollectionNameText);
-            this.Controls.Add(this.CreateCollectionButton);
-            this.Controls.Add(this.DescriptionCollectionText);
-            this.Controls.Add(this.Text3);
-            this.Controls.Add(this.Text2);
-            this.Controls.Add(this.Text1);
-            this.Controls.Add(this.Picture5);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "CreateNewList";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            ((System.ComponentModel.ISupportInitialize)(this.Picture5)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            resources.ApplyResources(this, "$this");
+            AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(CollectionNameText);
+            Controls.Add(CreateCollectionButton);
+            Controls.Add(DescriptionCollectionText);
+            Controls.Add(Text3);
+            Controls.Add(Text2);
+            Controls.Add(Text1);
+            Controls.Add(Picture5);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
+            Name = "CreateNewList";
+            ((System.ComponentModel.ISupportInitialize)Picture5).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

@@ -65,7 +65,7 @@ namespace design
                 context.SaveChanges();
 
                 MessageBox.Show("Регистрация прошла успешно!");
-                MainWindow mainWindow = new MainWindow();
+                MainWindow mainWindow = new MainWindow(LoginRegText.Text);
                 mainWindow.ShowDialog();
                 
             }

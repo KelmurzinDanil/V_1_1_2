@@ -93,7 +93,7 @@ namespace design
             HeshPassword heshPassword = new HeshPassword();
             using (var context = new ApplicationContex())
             {
-                var user = context.Users.FirstOrDefault(user => user.Email == LoginTextAutho.Text 
+                var user = context.Users.FirstOrDefault(user => user.Email == LoginTextAutho.Text
                 && user.Password == heshPassword.GetPassword(PasswordTextAutho.Text));
                 if (user == null)
                 {
